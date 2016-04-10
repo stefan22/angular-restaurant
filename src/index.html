@@ -9,7 +9,7 @@
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	</head>
 
-	<body>
+	<body ng-view>
 
 		<h1>Customers Waiting List</h1>
 
@@ -22,7 +22,7 @@
 			</ul>
 
 
-
+			<ng-view></ng-view>
 
 
 	<!--Third-party JS-->
@@ -37,6 +37,9 @@
 	<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
     <!-- Main app module -->
     <script src="app/app.module.js"></script>
+    <!-- landing module -->
+    <script src="app/landing/landing.module.js"></script>
+    <script src="app/landing/config.route.js"></script>
 	</body>
 
 </html>
