@@ -1,18 +1,26 @@
 (function() {
 	'use strict';
-	var app = angular.module('app', [
-		//Angular modules.
+
+	var myApp = angular.module('myApp', [
+
+		//Angular modules
 		'ngRoute',
 
-		//Third party modules.
+		//Third party modules
 		'firebase',
 
 		//Custom modules
 		'app.landing'
 
+
+
 	]);
 
+	myApp.controller('MainPageController', ['$scope', function($scope) {
+
+		$scope.welcome = "This is the home page";
+
+	}]);
 
 
 })();
-

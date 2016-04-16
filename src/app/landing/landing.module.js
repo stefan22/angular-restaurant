@@ -1,5 +1,10 @@
 (function() {
+	'use strict';
 
-	var landing = angular.module('app.landing',[]);
+	var appLanding = angular.module('app.landing',[]);
+
+
+
+
 
 })();

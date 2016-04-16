@@ -1,16 +1,19 @@
 (function() {
 
-	angular.
-		module('app.landing')
-		.config(configFunction)
+	'use strict';
 
-		configFunction.$inject = ['$routeProvider'];
+	angular.module('app.landing')
+		   .config(landingRoute);
 
-		function configFunction($routeProvider) {
-			$routeProvider.when('/', {
-				templateUrl: 'app/landing/landing.html'
 
-			});
-		}
+	landingRoute.$inject = ['$routeProvider'];	   
+
+
+	function landingRoute($routeProvider) {
+		$routeProvider.when('/', {
+			templateUrl: 'app/landing/landing.html'
+		});
+	}	   
+
 
 })();
